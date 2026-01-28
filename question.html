@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Responsive Test Sistemi - Bütün cihazlarda optimal işləyir">
+    <title>Responsive Test Sistemi</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <div class="app">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-content">
+                <div class="progress-container">
+                    <div class="progress-text" id="progressText">İcra olunub: 0 / 0 (0%)</div>
+                    <div class="progress">
+                        <div class="progress-bar" id="bar"></div>
+                    </div>
+                </div>
+                <div class="question-counter" id="questionCounter">Sual 1 / 10</div>
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="content">
+            <div class="question-container">
+                <div class="question-text" id="q"></div>
+                <div class="answers" id="a"></div>
+                
+                <!-- Navigation buttons -->
+                <div class="navigation-container">
+
+                    <!-- HOME BUTTON (ADDED) -->
+                    <button class="nav-btn home" onclick="goHome()">
+                        Əsas səhifəyə keç
+                    </button>
+
+                    <div class="nav-buttons">
+                        <button class="nav-btn prev" onclick="prev()" aria-label="Əvvəlki sual">
+                            <span>⬅</span> Əvvəl
+                        </button>
+                        <button class="nav-btn next" id="next" onclick="next()" disabled aria-label="Növbəti sual">
+                            Sonra <span>➡</span>
+                        </button>
+                    </div>
+                    
+                    <div class="stats-container">
+                        <div class="stat correct-stat">
+                            <span class="stat-value" id="t">0</span>
+                            <span class="stat-label">Doğru</span>
+                        </div>
+                        <div class="stat wrong-stat">
+                            <span class="stat-value" id="f">0</span>
+                            <span class="stat-label">Səhv</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Data/questions.js"></script>
+    <script src="./JavaScript/script.js"></script>
+</body>
+</html>

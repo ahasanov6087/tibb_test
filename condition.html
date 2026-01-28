@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şərtli Test Sistemi</title>
+    <link rel="stylesheet" href="./CSS/styles1.css">
+</head>
+<body>
+<div class="app">
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header-content">
+            <div class="question-counter" id="counter">
+                Sual 1 / 5
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <div class="question-container">
+
+            <!-- MAIN CONDITION -->
+            <div class="condition-box" id="condition">
+                🚗 Car is crashed
+            </div>
+
+            <!-- QUESTION -->
+            <div class="question-text" id="question"></div>
+
+            <!-- ANSWERS -->
+            <div class="answers" id="answers"></div>
+
+            <!-- NAVIGATION -->
+            <div class="navigation-container">
+
+                <!-- HOME BUTTON (ADDED) -->
+                <button class="nav-btn home" onclick="goHome()">
+                    Əsas səhifəyə keç
+                </button>
+
+                <div class="nav-buttons">
+                    <button class="nav-btn prev" id="prevBtn">⬅ Əvvəl</button>
+                    <button class="nav-btn next" id="nextBtn" disabled>Sonra ➡</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="./Data/conditions.js"></script>
+<script src="./JavaScript/script2.js"></script>
+</body>
+</html>
