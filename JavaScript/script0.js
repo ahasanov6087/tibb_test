@@ -8,3 +8,5 @@ function goToConditions() {
 function goToOpenQuestions() {
   window.location.href = "aciqsual.html";
 }
+
+// Tibb ucun vebsayt
