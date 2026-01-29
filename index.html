@@ -1,34 +1,68 @@
 <!DOCTYPE html>
-<html lang="az">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Test Seçimi</title>
-  <link rel="stylesheet" href="./CSS/styles0.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Test Sisteminə Giriş</title>
+    <link rel="stylesheet" href="./CSS/styles3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <div class="app">
-    <div class="content center-content">
-      <div class="menu-card">
-        <h1 class="menu-title">Seçim edin</h1>
-
-        <button class="menu-btn primary" onclick="goToQuestions()">
-          Suallar
-        </button>
-
-        <button class="menu-btn secondary" onclick="goToConditions()">
-          Məsələlər
-        </button>
-
-        <!-- New button added -->
-        <button class="menu-btn tertiary" onclick="goToOpenQuestions()">
-          Açıq Suallar
-        </button>
-      </div>
+    <div class="container">
+        <div class="login-box">
+            <div class="header">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h1>Test Sisteminə Giriş</h1>
+                </div>
+                <p class="subtitle">Test və məsələlər üçün daxil olun</p>
+            </div>
+            
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i> Mail
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="Mail ünvanınızı daxil edin" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fas fa-key"></i> Kod
+                    </label>
+                    <input type="password" id="password" name="password" placeholder="Kodunuzu daxil edin" required>
+                    <div class="password-toggle">
+                        <i class="fas fa-eye" id="togglePassword"></i>
+                    </div>
+                </div>
+                
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox" id="remember">
+                        <span>Məlumatlarımı yadda saxla</span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="login-btn">
+                    <i class="fas fa-sign-in-alt"></i> Daxil Ol
+                </button>
+                
+                <div class="info-box">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Daxil olma məlumatları administrator tərəfindən təqdim olunur. Brauzerinizdə saxlayın.</p>
+                </div>
+            </form>
+            
+            <div class="message" id="message"></div>
+            
+            <div class="language-switch">
+                <button class="lang-btn active" id="langAz">AZ</button>
+                <button class="lang-btn" id="langEn">EN</button>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <script src="./JavaScript/script0.js"></script>
+    <script src="./JavaScript/script4.js"></script>
 </body>
 </html>

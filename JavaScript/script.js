@@ -132,7 +132,7 @@ document.addEventListener('keydown', function(e) {
   }
 });
 function goHome() {
-    window.location.href = "index.html";
+    window.location.href = "index1.html";
 }
 
 
