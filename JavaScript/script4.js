@@ -13,6 +13,13 @@ let users = JSON.parse(localStorage.getItem('users')) || [
         password: "admin456",
         created_at: new Date().toISOString(),
         language: "az"
+    },
+    {
+        id: 2,
+        email: "intaynur@mail.ru",
+        password: "hasanova",
+        created_at: new Date().toISOString(),
+        language: "az"
     }
 ];
 
