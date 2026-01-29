@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./CSS/styles3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Safari specific meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body>
     <div class="container">
@@ -24,14 +27,14 @@
                     <label for="email">
                         <i class="fas fa-envelope"></i> Mail
                     </label>
-                    <input type="email" id="email" name="email" placeholder="Mail ünvanınızı daxil edin" required>
+                    <input type="email" id="email" name="email" placeholder="Mail ünvanınızı daxil edin" required autocomplete="username">
                 </div>
                 
                 <div class="form-group">
                     <label for="password">
                         <i class="fas fa-key"></i> Kod
                     </label>
-                    <input type="password" id="password" name="password" placeholder="Kodunuzu daxil edin" required>
+                    <input type="password" id="password" name="password" placeholder="Kodunuzu daxil edin" required autocomplete="current-password">
                     <div class="password-toggle">
                         <i class="fas fa-eye" id="togglePassword"></i>
                     </div>
@@ -57,12 +60,73 @@
             <div class="message" id="message"></div>
             
             <div class="language-switch">
-                <button class="lang-btn active" id="langAz">AZ</button>
-                <button class="lang-btn" id="langEn">EN</button>
+                <button type="button" class="lang-btn active" id="langAz">AZ</button>
+                <button type="button" class="lang-btn" id="langEn">EN</button>
+            </div>
+            
+            <!-- Safari fallback warning (hidden by default) -->
+            <div class="safari-warning" id="safariWarning">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Brauzeriniz məlumatları yadda saxlamaq üçün icazə tələb edə bilər. Zəhmət olmasa izin verin.</p>
             </div>
         </div>
     </div>
 
     <script src="./JavaScript/script4.js"></script>
+    <!-- Safari polyfills -->
+    <script>
+        // Safari localStorage fix
+        if (typeof window.localStorage === 'undefined' || window.localStorage === null) {
+            (function() {
+                var Storage = function() {
+                    var data = {};
+                    
+                    this.setItem = function(key, value) {
+                        data[key] = String(value);
+                        // Also try to set a cookie as backup
+                        document.cookie = key + "=" + value + "; path=/; max-age=31536000";
+                    };
+                    
+                    this.getItem = function(key) {
+                        if (data.hasOwnProperty(key)) {
+                            return data[key];
+                        }
+                        // Try to get from cookie
+                        var name = key + "=";
+                        var decodedCookie = decodeURIComponent(document.cookie);
+                        var ca = decodedCookie.split(';');
+                        for(var i = 0; i <ca.length; i++) {
+                            var c = ca[i];
+                            while (c.charAt(0) === ' ') {
+                                c = c.substring(1);
+                            }
+                            if (c.indexOf(name) === 0) {
+                                return c.substring(name.length, c.length);
+                            }
+                        }
+                        return null;
+                    };
+                    
+                    this.removeItem = function(key) {
+                        delete data[key];
+                        document.cookie = key + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+                    };
+                    
+                    this.clear = function() {
+                        data = {};
+                        var cookies = document.cookie.split(";");
+                        for (var i = 0; i < cookies.length; i++) {
+                            var cookie = cookies[i];
+                            var eqPos = cookie.indexOf("=");
+                            var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+                            document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+                        }
+                    };
+                };
+                
+                window.localStorage = new Storage();
+            })();
+        }
+    </script>
 </body>
 </html>

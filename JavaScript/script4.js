@@ -1,38 +1,131 @@
-// Default users (you can add/remove as needed)
-let users = JSON.parse(localStorage.getItem('users')) || [
-    {
-        id: 1,
-        email: "test@example.com",
-        password: "test1234",
-        created_at: new Date().toISOString(),
-        language: "az"
-    },
-    {
-        id: 2,
-        email: "admin@example.com",
-        password: "admin456",
-        created_at: new Date().toISOString(),
-        language: "az"
-    },
-    {
-        id: 3,
-        email: "intaynur@mail.ru",
-        password: "hasanova",
-        created_at: new Date().toISOString(),
-        language: "az"
+// Safari-safe localStorage function
+function safeLocalStorage() {
+    try {
+        // Test if localStorage is available and working
+        localStorage.setItem('test', 'test');
+        localStorage.removeItem('test');
+        return localStorage;
+    } catch (e) {
+        // Fallback to in-memory storage
+        console.warn('localStorage not available, using fallback storage');
+        return {
+            _data: {},
+            setItem: function(key, value) {
+                this._data[key] = String(value);
+                // Also try to set a cookie as backup
+                document.cookie = key + "=" + encodeURIComponent(value) + "; path=/; max-age=31536000; SameSite=Lax";
+            },
+            getItem: function(key) {
+                if (this._data.hasOwnProperty(key)) {
+                    return this._data[key];
+                }
+                // Try to get from cookie
+                var name = key + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var ca = decodedCookie.split(';');
+                for(var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) === ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) === 0) {
+                        return decodeURIComponent(c.substring(name.length, c.length));
+                    }
+                }
+                return null;
+            },
+            removeItem: function(key) {
+                delete this._data[key];
+                document.cookie = key + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            },
+            clear: function() {
+                this._data = {};
+                // Clear all cookies for this domain
+                var cookies = document.cookie.split(";");
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i];
+                    var eqPos = cookie.indexOf("=");
+                    var name = eqPos > -1 ? cookie.substr(0, eqPos).trim() : cookie.trim();
+                    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+                }
+            }
+        };
     }
-    {
-        id: 4,
-        email: "lemanamrahova@mail.ru",
-        password: "amrahova",
-        created_at: new Date().toISOString(),
-        language: "az"
-    }
-];
+}
 
-// Save users to localStorage
+// Use safe localStorage
+const storage = safeLocalStorage();
+
+// Detect Safari
+function isSafari() {
+    return /^((?!chrome|android).)*safari/i.test(navigator.userAgent) || 
+           /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+}
+
+// Show Safari warning if needed
+if (isSafari()) {
+    // Check if localStorage works
+    try {
+        storage.setItem('safari_test', 'test');
+        if (storage.getItem('safari_test') !== 'test') {
+            throw new Error('localStorage test failed');
+        }
+        storage.removeItem('safari_test');
+    } catch (e) {
+        // Show warning
+        const warning = document.getElementById('safariWarning');
+        if (warning) {
+            warning.classList.add('show');
+        }
+    }
+}
+
+// Default users - using fallback if localStorage fails
+let users = [];
+try {
+    const storedUsers = storage.getItem('users');
+    if (storedUsers) {
+        users = JSON.parse(storedUsers);
+    } else {
+        // Initial users
+        users = [
+            {
+                id: 1,
+                email: "test@example.com",
+                password: "test123",
+                created_at: new Date().toISOString(),
+                language: "az"
+            },
+            {
+                id: 2,
+                email: "admin@example.com",
+                password: "admin456",
+                created_at: new Date().toISOString(),
+                language: "az"
+            }
+        ];
+        storage.setItem('users', JSON.stringify(users));
+    }
+} catch (e) {
+    console.error('Error loading users:', e);
+    users = [
+        {
+            id: 1,
+            email: "test@example.com",
+            password: "test123",
+            created_at: new Date().toISOString(),
+            language: "az"
+        }
+    ];
+}
+
+// Save users function
 function saveUsers() {
-    localStorage.setItem('users', JSON.stringify(users));
+    try {
+        storage.setItem('users', JSON.stringify(users));
+    } catch (e) {
+        console.error('Error saving users:', e);
+    }
 }
 
 // Language translations
@@ -68,7 +161,7 @@ const translations = {
 };
 
 // Current language
-let currentLang = localStorage.getItem('language') || 'az';
+let currentLang = storage.getItem('language') || 'az';
 
 // Update UI language
 function updateLanguage() {
@@ -95,7 +188,11 @@ function updateLanguage() {
     document.getElementById('langEn').classList.toggle('active', currentLang === 'en');
     
     // Save language preference
-    localStorage.setItem('language', currentLang);
+    try {
+        storage.setItem('language', currentLang);
+    } catch (e) {
+        console.error('Error saving language:', e);
+    }
 }
 
 // Toggle password visibility
@@ -141,26 +238,44 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     const user = users.find(u => u.email === email && u.password === password);
     
     if (user) {
-        // Save to session
-        sessionStorage.setItem('loggedInUser', JSON.stringify({
-            email: user.email,
-            language: currentLang,
-            loginTime: new Date().toISOString()
-        }));
+        // Save to sessionStorage (works better in Safari)
+        try {
+            sessionStorage.setItem('loggedInUser', JSON.stringify({
+                email: user.email,
+                language: currentLang,
+                loginTime: new Date().toISOString()
+            }));
+        } catch (e) {
+            // Fallback to in-memory
+            window._loggedInUser = {
+                email: user.email,
+                language: currentLang,
+                loginTime: new Date().toISOString()
+            };
+        }
         
-        // Save to localStorage if "Remember me" is checked
+        // Save to storage if "Remember me" is checked
         if (rememberMe) {
-            localStorage.setItem('rememberedEmail', email);
+            try {
+                storage.setItem('rememberedEmail', email);
+            } catch (e) {
+                console.error('Error saving remembered email:', e);
+            }
         } else {
-            localStorage.removeItem('rememberedEmail');
+            try {
+                storage.removeItem('rememberedEmail');
+            } catch (e) {
+                console.error('Error removing remembered email:', e);
+            }
         }
         
         // Show success message and redirect
         showMessage(trans.success, 'success');
         
-        // Redirect to index1.html after 1.5 seconds
+        // Safari-safe redirect
         setTimeout(() => {
-            window.location.href = 'index1.html';
+            // Use location.assign for better Safari compatibility
+            window.location.assign('index1.html');
         }, 1500);
     } else {
         showMessage(trans.error, 'error');
@@ -168,12 +283,14 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
 });
 
 // Language switchers
-document.getElementById('langAz').addEventListener('click', function() {
+document.getElementById('langAz').addEventListener('click', function(e) {
+    e.preventDefault();
     currentLang = 'az';
     updateLanguage();
 });
 
-document.getElementById('langEn').addEventListener('click', function() {
+document.getElementById('langEn').addEventListener('click', function(e) {
+    e.preventDefault();
     currentLang = 'en';
     updateLanguage();
 });
@@ -183,10 +300,24 @@ window.addEventListener('DOMContentLoaded', function() {
     // Set initial language
     updateLanguage();
     
-    const rememberedEmail = localStorage.getItem('rememberedEmail');
-    if (rememberedEmail) {
-        document.getElementById('email').value = rememberedEmail;
-        document.getElementById('remember').checked = true;
+    try {
+        const rememberedEmail = storage.getItem('rememberedEmail');
+        if (rememberedEmail) {
+            document.getElementById('email').value = rememberedEmail;
+            document.getElementById('remember').checked = true;
+        }
+    } catch (e) {
+        console.error('Error loading remembered email:', e);
+    }
+    
+    // Safari: prevent form zoom on focus
+    if (isSafari()) {
+        document.querySelectorAll('input').forEach(input => {
+            input.addEventListener('focus', function() {
+                window.scrollTo(0, 0);
+                document.body.scrollTop = 0;
+            });
+        });
     }
 });
 
@@ -205,20 +336,3 @@ function addUser(email, password, language = 'az') {
     console.log('New user added:', newUser);
     return newUser;
 }
-
-// Function to list all users
-function listUsers() {
-    console.log('Current users:', users);
-    return users;
-}
-
-// Function to check if user is logged in (for index1.html)
-function checkLogin() {
-    const loggedInUser = sessionStorage.getItem('loggedInUser');
-    if (!loggedInUser && !window.location.href.includes('index.html')) {
-        window.location.href = 'index.html';
-    }
-}
-
-// Example: To add a new user, run in browser console:
-// addUser("newuser@example.com", "password123");
