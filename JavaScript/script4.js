@@ -1,24 +1,29 @@
 /* ===============================
    INITIALIZE USERS (ONLY ONCE)
 ================================ */
-if (!localStorage.getItem('users')) {
-    localStorage.setItem('users', JSON.stringify([
-        { id: 1, email: "test@example.com", password: "test1234" },
-        { id: 2, email: "admin@example.com", password: "admin456" },
-        { id: 3, email: "intaynur@mail.ru", password: "hasanova" },
-        { id: 4, email: "lemanamrahova@mail.ru", password: "amrahova" },
-        { id: 5, email: "revanibrahimli121618@gmail.com", password: "ruhiyye0101" },
-        { id: 6, email: "anarismoyilov791@gmail.com", password: "1981" },
-        { id: 7, email: "arzu1973@gmail.com", password: "arzu1973" },
-        { id: 8, email: "mmmdovak329@gmail.com", password: "kemale2026" },
-        { id: 9, email: "gulshen1992m@gmail.com", password: "gulsən2026" },
-        { id: 10, email: "ekberay96@gmail.com", password: "leyla2026" },
-        { id: 11, email: "seiderizvanova1977@gmail.com", password: "səidə2026" },
-    ]));
-}
+const defaultUsers = [
+  { id: 1, email: "test@example.com", password: "test1234" },
+  { id: 2, email: "admin@example.com", password: "admin456" },
+  { id: 3, email: "intaynur@mail.ru", password: "hasanova" },
+  { id: 4, email: "lemanamrahova@mail.ru", password: "amrahova" },
+  { id: 5, email: "revanibrahimli121618@gmail.com", password: "ruhiyye0101" },
+  { id: 6, email: "anarismoyilov791@gmail.com", password: "1981" },
+  { id: 7, email: "arzu1973@gmail.com", password: "arzu1973" },
+  { id: 8, email: "mmmdovak329@gmail.com", password: "kemale2026" },
+  { id: 9, email: "gulshen1992m@gmail.com", password: "gulsən2026" },
+  { id: 10, email: "ekberay96@gmail.com", password: "leyla2026" },
+  { id: 11, email: "seiderizvanova1977@gmail.com", password: "səidə2026" }
+];
 
-const users = JSON.parse(localStorage.getItem('users'));
+let users = JSON.parse(localStorage.getItem("users")) || [];
 
+defaultUsers.forEach(u => {
+  if (!users.some(x => x.email === u.email)) {
+    users.push(u);
+  }
+});
+
+localStorage.setItem("users", JSON.stringify(users));
 
 /* ===============================
    PASSWORD TOGGLE
