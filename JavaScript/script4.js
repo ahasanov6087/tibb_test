@@ -6,7 +6,9 @@ if (!localStorage.getItem('users')) {
         { id: 1, email: "test@example.com", password: "test1234" },
         { id: 2, email: "admin@example.com", password: "admin456" },
         { id: 3, email: "intaynur@mail.ru", password: "hasanova" },
-        { id: 4, email: "lemanamrahova@mail.ru", password: "amrahova" }
+        { id: 4, email: "lemanamrahova@mail.ru", password: "amrahova" },
+        { id: 5, email: "revanibrahimli121618@gmail.com", password: "ruhiyye0101" }
+        { id: 6, email: "anarismoyilov791@gmail.com", password: "1981" },
     ]));
 }
 
