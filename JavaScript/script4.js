@@ -11,6 +11,9 @@ if (!localStorage.getItem('users')) {
         { id: 6, email: "anarismoyilov791@gmail.com", password: "1981" },
         { id: 7, email: "arzu1973", password: "arzu1973" },
         { id: 8, email: "memmedovakemale", password: "kemale2026" },
+        { id: 9, email: "məmmədəliyevagulsən", password: "gulsən2026" },
+        { id: 10, email: "Leylaleyla", password: "leyla2026" },
+        { id: 11, email: "Səidə2026", password: "səidə2026" },
     ]));
 }
 
