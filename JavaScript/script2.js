@@ -133,6 +133,13 @@ function resetWithNewRandomization() {
 function goHome() {
     window.location.href = "index1.html";
 }
+// 🔐 SESSION PROTECTION (RUNS FIRST)
+const user = sessionStorage.getItem("loggedInUser");
+if (!user) {
+  window.location.href = "index.html";
+}
+
+
 
 /* INIT */
 load();
