@@ -8,12 +8,13 @@ const defaultUsers = [
   { id: 4, email: "lemanamrahova@mail.ru", password: "amrahova" },
   { id: 5, email: "revanibrahimli121618@gmail.com", password: "ruhiyye0101" },
   { id: 6, email: "anarismoyilov791@gmail.com", password: "1981" },
-  { id: 7, email: "arzu1973@gmail.com", password: "arzu1973" },
+  { id: 7, email: "angelwoman197@gmail.com", password: "arzu1973" },
   { id: 8, email: "mmmdovak329@gmail.com", password: "kemale2026" },
   { id: 9, email: "gulshen1992m@gmail.com", password: "gulsən2026" },
   { id: 10, email: "ekberay96@gmail.com", password: "leyla2026" },
   { id: 11, email: "seiderizvanova1977@gmail.com", password: "səidə2026" },
   { id: 12, email: "ilhama078@gmail.com", password: "ilhama2026" },
+  { id: 13, email: "huseynovaafaq1908@gmail.com", password: "afaq2026" },
 ];
 
 let users = JSON.parse(localStorage.getItem("users")) || [];
