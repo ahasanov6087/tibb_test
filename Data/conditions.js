@@ -80,7 +80,7 @@ const DATA = [
     {
       question: "Bu xəstəlik idarə olunur?",
       options: ["Bəli", "Xeyr", "Qisman idarə olunur"],
-      correct: 0
+      correct: 1
     },
     {
       question: "Bu xəstəliyin peyvəndi hansıdır?",
@@ -928,37 +928,6 @@ const DATA = [
   ]
 },
 
-// Məsələ 31
-{
-  condition: "53 yaşlı kişi gecə yarısı amblotora müraciət edib. Döş qəfəsi arxasında ağrı, yanğı hissiyyatı, qusma, qusmadan sonra qıcqırma olub. 20 ildir tütün qəbul edir.",
-  questions: [
-    {
-      question: "Hansı xəstəlikdən şübhələnirsiz?",
-      options: ["Ürəyin işemik xəstəliyi", "Qida borusunun xorası", "Diafraqmanın yırtığı"],
-      correct: 1
-    },
-    {
-      question: "Həkim gələnə qədər tibb bacısı nə etməlidir?",
-      options: ["Çoxlu soyuq su qəbul etdirməli", "Təcili yardım çağırmaq", "Nitroqliserin, aspirin verməli"],
-      correct: 1
-    },
-    {
-      question: "Müayinə necə olmalıdır?",
-      options: ["EKQ", "Döş qəfəsi rentgen", "Qastrofibroskopiya"],
-      correct: 2
-    },
-    {
-      question: "Xəstəliyin yaranma səbəbi?",
-      options: ["Xolesistit", "Appendisit", "Ezafogit reflüks"],
-      correct: 2
-    },
-    {
-      question: "Tibb bacısı həkimə qədər ilk yardımdan sonra nə etməlidir?",
-      options: ["Xəstənin hərəkətsizliyi təmin olunmalı", "Terapevtə yönəltməli", "Kardioloqa müraciət etmək"],
-      correct: 2
-    }
-  ]
-},
 
 // Məsələ 32
 {
@@ -2524,8 +2493,8 @@ const DATA = [
     },
     {
       question: "Xəstədə neçə faiz səthi yanıq qeyd edilir?",
-      options: ["27%", "18%", "36 %"],
-      correct: 1
+      options: ["27%", "18%", "36%"],
+      correct: 0
     },
     {
       question: "Xəstədə neçə faiz dərin yanıq qeyd edilir?",

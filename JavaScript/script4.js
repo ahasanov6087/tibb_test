@@ -14,7 +14,7 @@ const defaultUsers = [
   { id: 10, email: "ekberay96@gmail.com", password: "leyla2026" },
   { id: 11, email: "seiderizvanova1977@gmail.com", password: "səidə2026" },
   { id: 12, email: "ilhama078@gmail.com", password: "ilhama2026" },
-  { id: 13, email: "huseynovaafaq1908@gmail.com", password: "afaq2026" },
+  { id: 13, email: "huseynovaafaq1908@gmail.com", password: "afaq2026" }, 
 ];
 
 let users = JSON.parse(localStorage.getItem("users")) || [];
