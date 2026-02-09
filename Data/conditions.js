@@ -931,7 +931,7 @@ const DATA = [
 
 // Məsələ 32
 {
-  condition: "Xəstə kişidir və 2 ildir xəstədir, halhazırda ürəkbulanma, diareya, qarında gurultu, göbək ətrafında spastik ağrılardan şikayət edir, ağrılar acı qidanın qəbulundan sonra əmələ gəlib, defekasiya aktı zamanı artır. AT 100-60, nəbz 100. Nəcis suludur.",
+  condition: "Xəstə kişidir və 2 ildir xəstədir, halhazırdaa ürəkbulanma, diareya, qarında gurultu, göbək ətrafında spastik ağrılardan şikayət edir, ağrılar acı qidanın qəbulundan sonra əmələ gəlib, defekasiya aktı zamanı artır. AT 100-60, nəbz 100. Nəcis suludur.",
   questions: [
     {
       question: "Nədən şübhələnmək olar?",
