@@ -2266,7 +2266,7 @@ const DATA = [
     {
       question: "Heksanın tərkibinə neçə vaksin daxildir?",
       options: ["5", "6", "3"],
-      correct: 1
+      correct: 0
     },
     {
       question: "Soyuducuda hansı rəfdə saxlanılır",
