@@ -3059,6 +3059,814 @@ const DATA = [
       correct: 0
     }
   ]
-}
+},
+{
+    condition: "26 yaşlı gənc oğlanda bazunun yuxarı 1/3-də palpasiya zamanı və hərəkət etdirdikdə ağrılar müşahidə edilir. Palpasiya zamanı krepitasiya hiss olunur. Ətrafın funksiyası pozulmuşdur. Xəstənin vəziyyəti ağırdır, dəri örtüyü soyuq tərlə örtülmüşdür.",
+    questions: [
+      {
+        question: "Nədən şübhələnirsiz?",
+        options: ["Bazunun qapalı sınığı", "Yumşaq toxumaların əzilməsi", "Bazunun sınığı"],
+        correct: 2
+      },
+      {
+        question: "İlkin görüləcək tədbirlər?",
+        options: ["Repozisiya etmək", "Paltarlarını çıxartmaq", "Xəstəyə rahatlıq vermək və paltarlarını çıxartmamaq"],
+        correct: 0
+      },
+      {
+        question: "İlk tibbi yardım nədən ibarətdir?",
+        options: ["Spirtlə kompres qoymaq", "İsitqac qoymaq", "Soyuq qoymaq, immobilizasiya etmək"],
+        correct: 2
+      },
+      {
+        question: "Mütləq müayinə hansıdır?",
+        options: ["USM (ultra səs müayinə)", "Dopler müayinə", "Rentgenoloji müayinə"],
+        correct: 2
+      },
+      {
+        question: "Ağrını azaltmaq üçün nə etmək lazımdır?",
+        options: ["2%-li 2-5 ml novokain blokadası etmək", "Antibiotiklərdən istifadə etmək", "Kompleks vitamin terapiyası"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "Tibb bacısı 5 yaşlı uşağa patronaja gəlib. Ananın sözlərinə görə uşaq 6 gündür ki xəstədir, 2 gündür ki səpib. Uşağın bədən temperaturu 37.8°C, üzündə, bədən dərisində ləkəli populyoz səpki müşahidə olunur. Səpkilər bəzi yerlərdə birləşir. Hər 2 gözdə konyuktivit əlamətləri nəzərə çarpır. Uşaq gözlərini əlləri ilə tutaraq otağın işıqlanmasının onu narahat etdiyini bildirir. Ağzının selikli qişasında da səpgi müşahidə olunur.",
+    questions: [
+      {
+        question: "Tibb bacısı hansı xəstəlikdən şübhələnə bilər?",
+        options: ["Qızılca", "Su çiçəyi", "Skarlatina"],
+        correct: 0
+      },
+      {
+        question: "Tibb bacısı ilkin olaraq hansı tədbiri görməlidir?",
+        options: ["Təcili yardım çağırmalıdır", "Uşağı stasionara yerləşdirməyi təkid etməlidir", "Sahə həkiminə məlumat verməlidir"],
+        correct: 2
+      },
+      {
+        question: "Tibb bacısı belə vəziyyətlərdə anaya hansı rejimə riayət etməyi məsləhət görməlidir?",
+        options: ["Uşağı təcrid etməklə yataq rejimi", "Uşağı təcrid etməməklə sərbəst rejim", "Uşağı təmiz havada gəzdirmə rejimi"],
+        correct: 0
+      },
+      {
+        question: "Xəstəliyin xarakter simptomu hansıdır?",
+        options: ["Polimorf səpgilər", "Filatov üçbucağı", "Belski-Filatov-Koplik ləkələri"],
+        correct: 2
+      },
+      {
+        question: "Belə xəstəliklərin qarşısının alınması üçün hansı profilaktik tədbir görülməlidir?",
+        options: ["QPM vaksini aktiv immunlaşdırma", "Histaminoterapiya", "Vitaminoterapiya ilə passiv immunlaşdırma"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "Xəstə qadındır, 41 yaşı var. Döş sümüyü arxasında sıxıcı, təzyiq edici ağrılardan, ağrının sol qola, sol çiyinə yayılmasından, başgicəllənmədən şikayət edir. Ağrılar 5-ci mərtəbəyə ağır zənbillə piyada qalxandan sonra başlayıb. Əvvəllər də ürək nahiyəsində qısa müddətli ağrılar olub, lakin əhəmiyyət verməyib, həkimə müraciət etməyib və nitroqlisserin qəbulundan sonra ağrılar keçib. Obyektiv olaraq vəziyyəti kafidir, dərialtı piy təbəqəsi qalındır. Tənəffüs sayı 1 dəqiqədə 16, nəbz-92, A/T-130/90 mm c.süt., t-36.7°C-dir.",
+    questions: [
+      {
+        question: "Tibb bacısının taktikası?",
+        options: [
+          "Xəstəni evdə saxlayıb, hər gün Analgin və Dimedrol vurmağı məsləhət vermək",
+          "Ərazi üzrə poliklinika kardioloqunun müayinəsinə göndərmək və ya təcili yardım maşını ilə tez bir zaman xəstəxanaya çatdırmaq",
+          "Xəstəni evdə saxlayıb, ağrı zamanı nitroqliserinin qəbulunu məsləhət etmək"
+        ],
+        correct: 1
+      },
+      {
+        question: "Xəstə hansı vəziyyətdə olmalıdır?",
+        options: ["Arxası üstə uzanmış", "Yarımoturaq", "Ayaqları bir qədər yuxarı olmaqla uzanmış"],
+        correct: 0
+      },
+      {
+        question: "Belə vəziyyətdə xəstəyə hansı dərmanı vermək məqsədəuyğundur?",
+        options: ["Analgin", "No-şpa", "Nitroqliserin"],
+        correct: 2
+      },
+      {
+        question: "Xəstədə hansı müayinənin aparılması daha uyğundur?",
+        options: ["Elektrokardioqrafiya (EKQ)", "Döş qəfəsinin rentgenoqrafiyası", "Sidiyin ümumi analizi"],
+        correct: 0
+      },
+      {
+        question: "Nədən şübhələnirsiz?",
+        options: ["Stenokardiya", "Ürək astması", "Miokard infarktı"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "52 yaşlı arıq bədənli kişidə sürəkli öskürəkdən sonra qısa müddət ərzində 10 ml-dən çox al-qırmızı köpüklü qan xaric olur.",
+    questions: [
+      {
+        question: "Nədən şübhələnirsiz?",
+        options: ["Onikibarmaq bağırsaq qanaxmasından", "Ağ ciyər qanaxmasından", "Mədə qanaxmasından"],
+        correct: 1
+      },
+      {
+        question: "Görüləcək ilk tədbir nədən ibarətdir?",
+        options: ["Xəstəyə 5%-li qlükoza məhlulu venaya köçürtmək", "Heparin inyeksiyasını vurmaq", "Təcili yardıma zəng etmək"],
+        correct: 2
+      },
+      {
+        question: "İlk tibbi yardım necə olmalıdır?",
+        options: ["Döş qəfəsinə soyuq qoymaq", "İsitqac qoymaq", "Oksigen inhalyasiyasını aparmaq"],
+        correct: 0
+      },
+      {
+        question: "Diaqnozu təsdiq etmək üçün aparılacaq əsas müayinə üsulu hansıdır?",
+        options: ["USM", "Angioqrafiya", "Döş qəfəsinin roentgen müayinəsi"],
+        correct: 1
+      },
+      {
+        question: "Xəstə hansı şöbədə yerləşdirilməlidir?",
+        options: ["Terapiya şöbəsində", "Travmatologiya şöbəsində", "Vərəm şöbəsində (və ya pulmonologiya şöbəsində)"],
+        correct: 2
+      }
+    ]
+  },
+  {
+    condition: "46 yaşlı xəstə kişi yataqda, uzanmış vəziyyətdədir. Kəskin təngnəfəslik, öskürək, az miqdarda qatı bəlğəm ifrazı, ümumi zəiflikdən şikayətlənir. 4 ildir vaxtaşırı boğulma tutmaları olur. Tutma zamanı 'berotek' inhalyasiyası alır. 5 gün əvvəl kəskin respirator infeksiyaya yoluxub. Bu fonda tutmaların sayı artıb, təngnəfəslik keçmir, dərman inhalyasiyası qısa müddətli effekt verir. Obyektiv olaraq dəri solğun, sianozludur, məsafədən xırıltılı tənəffüs eşidilir. Nəbz 1 dəqiqədə 120, A/T – 160/90, tənəffüs 1 dəqiqədə 28-dir.",
+    questions: [
+      {
+        question: "Nədən şübhələnirsiniz?",
+        options: ["Bronxial astma", "Xroniki bronxitin kəskinləşməsi"],
+        correct: 0
+      },
+      {
+        question: "Xəstənin döş qəfəsinə xardal yaxması qoymaq olarmı?",
+        options: ["Xeyr", "Bəli"],
+        correct: 1
+      },
+      {
+        question: "Xəstənin ayaqlarını isti vannaya qoymaq olarmı?",
+        options: ["Olmaz", "Olar"],
+        correct: 1
+      },
+      {
+        question: "Oksigenoterapiya məqsədəuyğundurmu?",
+        options: ["Bəli", "Xeyr"],
+        correct: 0
+      },
+      {
+        question: "Xəstənin vəziyyəti necə olmalıdır?",
+        options: ["Yarımoturaq vəziyyət", "Uzanmış vəziyyət"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "Xəstə 19 yaşlı kişidir. Ümumi zəiflik, baş ağrısı, təngnəfəslik, bəlğəmli öskürəkdən şikayətlənir. Xəstəliyini soyuqdəymə ilə əlaqələndirir, 4 gündür xəstədir. Obyektiv olaraq vəziyyəti kafidir, bədən temperaturu 37,7°C, tənəffüsün sayı 1 dəqiqədə 21, nəbz 88, A/T 110/70.",
+    questions: [
+      {
+        question: "Nədən şübhələnirsiz?",
+        options: ["Pnevmoniya", "Kəskin bronxit"],
+        correct: 1
+      },
+      {
+        question: "Xəstənin döş qəfəsinə banka qoymaq olarmı?",
+        options: ["Bəli", "Xeyr"],
+        correct: 1
+      },
+      {
+        question: "Evkalipt dəmləməsi ilə inhalyasiya aparmaq olarmı?",
+        options: ["Olar", "Olmaz"],
+        correct: 0
+      },
+      {
+        question: "Xəstənin ayaqlarına xardal qoymaq olarmı?",
+        options: ["Bəli", "Xeyr"],
+        correct: 0
+      },
+      {
+        question: "Xəstənin rejimi necə olmalıdır?",
+        options: ["Yataq rejimi", "Yarım yataq rejimi"],
+        correct: 1
+      }
+    ]
+  },
+  {
+    condition: "Xəstə 30 yaşlı kişidir. Qarınüstü (epiqastral) nahiyədə kəskin ağrıdan, ürəkbulanma və qusmadan şikayətlənir. Son 3 ildə müntəzəm olaraq ağrılar baş verir. Bir gün əvvəl acı qida qəbulundan sonra ağrılar artmış, qusma baş vermişdir. Qusmadan sonra ağrı sakitləşmişdir. Səhər yenidən ağrılar artmış, qusmuş, qəhvə xıltı şəklində qusuntu kütləsi gəlmişdir.",
+    questions: [
+      {
+        question: "Nədən şübhələnirsiz?",
+        options: ["Mədə xorası", "Qastrit"],
+        correct: 0
+      },
+      {
+        question: "Xəstəyə daxilə dərman vermək olarmı?",
+        options: ["Bəli", "Xeyr"],
+        correct: 1
+      },
+      {
+        question: "Qarınüstü (epiqastral) nahiyəyə hansını qoymaq olar?",
+        options: ["Buz qovuğu", "İsitqac"],
+        correct: 0
+      },
+      {
+        question: "Xəstənin rejimi necə olmalıdır?",
+        options: ["Yataq rejimi", "Yarımyataq rejimi"],
+        correct: 0
+      },
+      {
+        question: "Tibb bacısının taktikası?",
+        options: ["Ev şəraitində müalicə", "Təcili yardım maşını ilə tez bir zaman xəstəxanaya çatdırmaq"],
+        correct: 1
+      }
+    ]
+  },
+  {
+    condition: "Xəstə qadındır, 28 yaşı var. Yeməkdən 3-4 saat sonra göbək ətrafında küt ağrılar, qarında qurultu, köpmə, ishal, ümumi zəiflik və arıqlama şikayətləri ilə müraciət etmişdir. 2 ildir dövri olaraq bu simptomlar müşahidə olunur, acı qida qəbulundan sonra vəziyyəti kəskinləşib.",
+    questions: [
+      {
+        question: "Nədən şübhələnirsiz?",
+        options: ["Enterit", "Qastrit"],
+        correct: 0
+      },
+      {
+        question: "Xəstəyə ağrıkəsici vermək olarmı?",
+        options: ["Bəli", "Xeyr"],
+        correct: 1
+      },
+      {
+        question: "Xəstənin pəhrizi necə olmalıdır?",
+        options: ["Qoruyucu", "Zülalla zəngin"],
+        correct: 0
+      },
+      {
+        question: "Xəstəni imalə etmək olarmı?",
+        options: ["Olar", "Olmaz"],
+        correct: 1
+      },
+      {
+        question: "Xəstəyə nə məsləhət görərdiniz?",
+        options: ["Qastroenteroloqa müraciət etmək", "Cərraha müraciət etmək"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "Xəstə qadındır, 55 yaşı var. Kəskin baş ağrısı, ürəkbulanma, başgicəllənmə, qulaqlarda küy, göz önündə ulduz sayrışması şikayətləri var. Son illər vaxtaşırı baş ağrıları olmuş, lakin əhəmiyyət verməmiş, həkimə müraciət etməmişdir. Burundan qanaxma müşahidə olunub. Obyektiv olaraq vəziyyəti orta ağırdır, nəbzi gərgin, 1 dəqiqədə 92, A/T – 200/100.",
+    questions: [
+      {
+        question: "Nədən şübhələnirsiz?",
+        options: ["Hipertonik kriz", "Burun qanaxması"],
+        correct: 0
+      },
+      {
+        question: "Xəstənin ayaqlarını isti vannaya qoymaq olarmı?",
+        options: ["Xeyr", "Bəli"],
+        correct: 1
+      },
+      {
+        question: "Hansını etmək daha məqsədəuyğundur?",
+        options: ["Boyun arxasına xardal yaxması qoymaq", "Burundan qanaxma baş verməməsi üçün başı arxaya əymək"],
+        correct: 0
+      },
+      {
+        question: "Xəstənin vəziyyəti necə olmalıdır?",
+        options: ["Yarımoturaq", "Uzanmış vəziyyət"],
+        correct: 0
+      },
+      {
+        question: "Xəstə ilə davranış taktikası?",
+        options: ["Təcili yardım çağırmaq", "Xəstəni terapevtə yönləndirmək"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "19 yaşlı xəstənin yüksək temperatur, diz, topuq, dirsək oynaqlarında ağrı şikayətləri var. Bir gün əvvəl qəflətən temperaturu 39°C-yə yüksəlmiş və oynaqları ağrımağa başlamışdır. Anamnezində 2 həftə əvvəl angina keçirdiyini söyləyir. Obyektiv olaraq vəziyyəti orta ağırdır, bədən temperaturu 39°C-dir. Diz oynağı nahiyəsində şişkinlik, qızartı, hərəkət zamanı ağrı müşahidə olunur. Nəbz 1 dəqiqədə 115, A/T-110/70. Ağız boşluğunda kariyesli dişlər, badamcıqların böyüdüyü görünür.",
+    questions: [
+      {
+        question: "Nədən şübhələnirsiz?",
+        options: ["Revmatizm", "Artroz"],
+        correct: 0
+      },
+      {
+        question: "Diz oynağına hansını qoymaq olar?",
+        options: ["Buz qovuğu", "İsidici kompres"],
+        correct: 0
+      },
+      {
+        question: "Qızdırmanı aşağı salmaq üçün nə etmək olar?",
+        options: ["Xəstənin alnına soyuq kompres qoymaq", "Bədənini bürümək"],
+        correct: 0
+      },
+      {
+        question: "Xəstəyə çoxlu maye içirtmək olarmı?",
+        options: ["Olar", "Olmaz"],
+        correct: 0
+      },
+      {
+        question: "Xəstə ilə davranış taktikanız?",
+        options: ["Həkim-revmatoloqa yönləndirmək", "Travmatoloqa yönləndirmək"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "Xəstə gənc qadındır. Barmağından müayinə üçün qan alınarkən qəflətən huşunu itirmiş və yıxılmışdır. Obyektiv olaraq dəri və görünən selikli qişaları solğundur, nəbz sapvari, 1 dəqiqədə 66-dır. A/T – 90/50.",
+    questions: [
+      {
+        question: "Nədən şübhələnirsiz?",
+        options: ["Bayılma", "Komatoz vəziyyət"],
+        correct: 0
+      },
+      {
+        question: "Xəstənin vəziyyəti necə olmalıdır?",
+        options: ["Uzanmış, ayaqlar bir qədər yuxarı", "Uzanmış, başı bir qədər yuxarı"],
+        correct: 0
+      },
+      {
+        question: "Xəstəyə naşatır spirti iylətmək olarmı?",
+        options: ["Olmaz", "Olar"],
+        correct: 0
+      },
+      {
+        question: "Xəstənin üzünə soyuq su çiləmək olarmı?",
+        options: ["Olar", "Olmaz"],
+        correct: 1
+      },
+      {
+        question: "Xəstə ilə davranış taktikanız?",
+        options: ["Xəstənin ayılmağını gözləyib həkimə müraciət etməyi məsləhət görmək", "Dərhal təcili yardım briqadası çağırmaq"],
+        correct: 1
+      }
+    ]
+  },
+  {
+    condition: "Terapiya şöbəsində 35 yaşlı xəstədə qəflətən boğulma tutması baş verib. Xəstə oturur, əlləri ilə çarpayının kənarından tutur, üzü sianozlaşıb, ekspirator təngnəfəslik, uzaqdan quru, fitəbənzər xırıltılar eşidilir.",
+    questions: [
+      {
+        question: "Bu hansı xəstəlik ola bilər?",
+        options: ["Bronxial astma", "Xroniki bronxit"],
+        correct: 0
+      },
+      {
+        question: "Tibb bacısı ilk yardım zamanı nə etməlidir?",
+        options: ["Xəstəni sakitləşdirib, dərhal həkim çağırmalıdır", "Xəstəyə eufillin vurmalıdır"],
+        correct: 0
+      },
+      {
+        question: "Xəstəliyin əsas yaranma səbəbi?",
+        options: ["Allergiya", "Bronxit"],
+        correct: 0
+      },
+      {
+        question: "Xəstəyə hansı dərman preparatları təyin edilə bilər?",
+        options: ["Eufillin, prednizalon", "Dibazol, laziks"],
+        correct: 0
+      },
+      {
+        question: "Xəstə qidasında nəyi azaltmalıdır?",
+        options: ["Allergiya yaradan qidaları (çiyələk, sitrus meyvələri, yumurta)", "Su və duzu"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "Şəkərli diabetli olan xəstə insulin inyeksiyasından sonra qida qəbul etməyib. Bir azdan xəstədə zəiflik, aclıq hissi, tərləmə və titrəmə baş verib.",
+    questions: [
+      {
+        question: "Xəstədə hansı vəziyyətdir?",
+        options: ["Hiperqlikemiya", "Hipoqlikemiya"],
+        correct: 1
+      },
+      {
+        question: "Xəstənin bu vəziyyətə düşməsinin səbəbi nədir?",
+        options: ["İnyeksiyasından sonra qida qəbul etməməsi", "Xəstə stress keçirib"],
+        correct: 0
+      },
+      {
+        question: "Tibb bacısı xəstəyə hansı yardımı etməlidir?",
+        options: ["Xəstəyə 2-3 parça qənd, şirin çay verməlidir", "Vena daxilinə 40%-li 40ml qlukoza vurmalıdır"],
+        correct: 0
+      },
+      {
+        question: "Xəstə huşunu itirərsə tibb bacısı nə etməlidir?",
+        options: ["Həkim gələnə qədər 40%-li 40ml qlukoza məhlulu vena daxilinə vurmaq üçün hazırlamalıdır", "Xəstənin aşağı ətrafını bir qədər yuxarı qaldırmalıdır"],
+        correct: 0
+      },
+      {
+        question: "Şəkərli diabet xəstəliyinin ağırlaşması nə ola bilər?",
+        options: ["Ətraflarda ödem", "Ətrafların qanqrenası"],
+        correct: 1
+      }
+    ]
+  },
+  {
+    condition: "Sağrı əzələsinə antibiotik vurulduqdan sonra xəstədə narahatlıq, baş gicəllənmə, sinədə sıxılma hissi, arterial təzyiqin enməsi, taxikardiya baş verib, xəstə huşunu itirərək yıxılıb.",
+    questions: [
+      {
+        question: "Xəstədə hansı vəziyyətdir?",
+        options: ["Anafilaktik şok", "Bayılma"],
+        correct: 0
+      },
+      {
+        question: "Tibb bacısının taktikası?",
+        options: ["İnyeksiya yerinə 0,1%-li 0,5 ml adrenalin yeridilməlidir", "İnyeksiya yerinə 0,5%-li 2,0 ml novokain yeridilməlidir"],
+        correct: 0
+      },
+      {
+        question: "Xəstəyə üfüqi vəziyyət vermək olar?",
+        options: ["Xeyr", "Bəli"],
+        correct: 1
+      },
+      {
+        question: "Xəstədə ürək və tənəffüs dayanarsa tibb bacısı nə etməlidir?",
+        options: ["Xəstəyə oksigen verməlidir", "Ürək ağciyər reanimasiyasına (ürəyin qapalı masajı) başlamalıdır"],
+        correct: 1
+      },
+      {
+        question: "Bu vəziyyətdən xəstəni çıxarmaq üçün nəyə üstünlük verilir?",
+        options: ["Venadaxili məhlulların yeridilməsinə", "Naşatır spirti iylətmək"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "60 yaşlı xəstədə evdə, gecə qəflətən təngnəfəslik, boğulma tutması, ölümdən qorxma hissi baş verib. Xəstə ayağa duraraq, açıq pəncərə qarşısında nəfəs almağa çalışır. Xəstənin vəziyyəti ağırdır. Dəri örtüyü solğun və üzü siyanozludur. A/T 180/100 mm/c.",
+    questions: [
+      {
+        question: "Xəstənin vəziyyətini müəyyənləşdirin?",
+        options: ["Kəskin ürək çatmamazlığı", "Kəskin tənəffüs çatmamazlığı"],
+        correct: 0
+      },
+      {
+        question: "Tibb bacısı ilk yardım zamanı nə etməlidir?",
+        options: ["Həkim çağırmalı, xəstəni sakitləşdirməyə çalışmalıdır", "Xəstəni üfüqi vəziyyətdə uzatmalıdır"],
+        correct: 0
+      },
+      {
+        question: "Bu xəstəyə nitroqliserin vermək məqsədəuyğundurmu?",
+        options: ["Bəli", "Xeyr"],
+        correct: 0
+      },
+      {
+        question: "Ətraflara venoz turna qoymaq olarmı?",
+        options: ["Xeyr", "Bəli"],
+        correct: 1
+      },
+      {
+        question: "Bu preparatlardan hansı xəstəyə təyin edilə bilər?",
+        options: ["Strofantin, Laziks", "Atropin, adrenalin"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "Qonşuda 50 yaşlı qadın stress keçirdikdən sonra ənsə nahiyəsində güclü baş ağrıları, göz önündə qara nöqtələr olmasından şikayətlənir. Xəstənin vəziyyəti ağırdır, oyanıqdır, üzü qızarmışdır. Xəstənin təzyiqi 154/92 mm c.süt., nəbzi 1 dəqiqədə 100 vurğudur.",
+    questions: [
+      {
+        question: "Bu hansı xəstəlik ola bilər?",
+        options: ["Hipertenziya", "Miqren"],
+        correct: 0
+      },
+      {
+        question: "Tibb bacısı ilk yardım zamanı nə etməlidir?",
+        options: ["Xəstənin alnına soyuq kompres qoymalıdır", "Xəstəyə üfüqi vəziyyət verilməlidir"],
+        correct: 0
+      },
+      {
+        question: "Xəstəyə nə məsləhət görərdiniz?",
+        options: ["Ayaqlarını isti suya qoymaq", "Baş ağrısı dərman vermək"],
+        correct: 0
+      },
+      {
+        question: "Xəstə qidalanmasında nəyi azaltmalıdır?",
+        options: ["Tərkibində kalium olan qidaları", "Duz və suyu"],
+        correct: 1
+      },
+      {
+        question: "Bu xəstəlik hansı ağırlaşmanı verə bilər?",
+        options: ["Miokard infarktı, insult", "Beyin şişi"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "Təcili yardım xəstəxanasının qəbul şöbəsinə 45 yaşlı xəstə qəbul olub. O, fiziki gərginlikdən sonra döş sümüyünün arxasında bütün döş qəfəsinə yayılan göynədici ağrıdan şikayət edir. Validol, karvalol qəbul etsə də təsiri olmayıb. Baxış zamanı xəstənin vəziyyətinin ağır, çox oyanıq, dəri örtüyünün solğun və tər damcıları ilə örtülməsi, A/T 110/70 mm c.süt., nəbz 1 dəqiqədə 100 vurğu və aritmik olması müəyyənləşdirilib.",
+    questions: [
+      {
+        question: "Bu hansı xəstəlik ola bilər?",
+        options: ["Miokard infarktı", "Stenokardiya"],
+        correct: 0
+      },
+      {
+        question: "Tibb bacısı ilk yardım zamanı nə etməlidir?",
+        options: ["Xəstəyə nitroqliserin və aspirin verməlidir", "Xəstənin ayağına isti vanna etməlidir"],
+        correct: 0
+      },
+      {
+        question: "Bu xəstəliklərin yayılma səbəbləri?",
+        options: ["Tromboflebit", "Tac damarların daralması (spazması) və tutulması"],
+        correct: 1
+      },
+      {
+        question: "Bu xəstəliklərin risk faktorları hansılardır?",
+        options: ["Hipertenziya", "Çoxlu maye qəbulu (polidepsiya)"],
+        correct: 0
+      },
+      {
+        question: "Bu xəstəliyin baş verəcəyini müasir üsullarla əvvəlcədən müəyyənləşdirmək olarmı?",
+        options: ["Olar", "Olmaz"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "Qəbul şöbəsinə gətirilən xəstə yağlı qida qəbulundan sonra sağ qabırğaaltı nahiyədə olan, sağ kürəyə və çiyinə vuran güclü ağrıdan, vaxtaşırı öd qusmadan, ağızda quruluq və acılıq hissindən şikayətlənir. Xəstənin vəziyyəti orta ağırdır, bədən temperaturu 36,6°C, A/T 130/80 mm c.süt., nəbzi 1 dəqiqədə 90.",
+    questions: [
+      {
+        question: "Hansı xəstəlikdən şübhələnirsiniz?",
+        options: ["Xolesistit", "Appendisit"],
+        correct: 0
+      },
+      {
+        question: "Tibb bacısı qusma zamanı hansı yardımı göstərməlidir?",
+        options: ["Üfüqi vəziyyətdə olan xəstənin başını yana çevirməlidir", "Sağ qabırğaaltı nahiyəyə isitqac qoymalıdır"],
+        correct: 0
+      },
+      {
+        question: "Xəstəlik zamanı hansı müayinələr aparıla bilər?",
+        options: ["Endoskopik müayinə", "Qarın boşluğu üzvlərinin ultrasəs müayinəsi"],
+        correct: 0
+      },
+      {
+        question: "Bu xəstəliyin müalicəsində hansı preparatlar daha effektlidir?",
+        options: ["No-şpa, baralgin, serukal", "Suprastin, adrenalin, vitamin C"],
+        correct: 0
+      },
+      {
+        question: "Pəhriz zamanı hansı qidalar məhdudlaşdırılmalıdır?",
+        options: ["Yağlı və qızardılmış qidalar", "Meyvə və tərəvəzlər"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "Xəstəxananın qəbul şöbəsinə 25 yaşlı sürücü daxil olub. 5 saat əvvəl yolda qida qəbulundan sonra özünü pis hiss edib. Baxış zamanı epiqastral nahiyədə ağrı, ürəkbulanma, qusma, dəri örtüyünün solğun və soyuq tər damcıları ilə örtülməsi, A/T 110/70 mm c.süt., nəbzin 1 dəqiqədə 85 vurğu olması müəyyənləşdirilib.",
+    questions: [
+      {
+        question: "Hansı xəstəlikdən şübhələnmək olar?",
+        options: ["Miokard infarktının abdominal forması", "Kəskin qida zəhərlənməsi"],
+        correct: 1
+      },
+      {
+        question: "Tibb bacısının taktikası?",
+        options: ["Xəstəyə qusuntu kütləsini yığmaq üçün qab və dəsmal verməlidir", "Xəstənin ayağına isti vanna etməlidir"],
+        correct: 0
+      },
+      {
+        question: "Qusuntu kütləsinin bakterioloji müayinəsi aparılmalıdırmı?",
+        options: ["Bəli", "Xeyr"],
+        correct: 0
+      },
+      {
+        question: "Bu halda xəstənin mədəsini yumaq?",
+        options: ["Olmaz", "Olar"],
+        correct: 0
+      },
+      {
+        question: "Mədəni yumaq üçün nə qədər maye götürülür?",
+        options: ["10 litr", "5 litr"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "17 yaşlı xəstə diz və dirsək oynağında olan uçucu xarakterli ağrıdan, ürək nahiyəsində xoşagəlməz hissdən, ümumi zəiflik və iştahsızlıqdan şikayət edir. İki həftə əvvəl angina ilə xəstələndiyini söyləyir. Baxış zamanı xəstənin narahat, oynaqlarının şişkin və ağrılı olması, temperaturu 37,8°C, A/T 110/70 mm c.s., nəbzin 1 dəqiqədə 80 vurğu olması müəyyənləşdirilib.",
+    questions: [
+      {
+        question: "Bu hansı xəstəlik ola bilər?",
+        options: ["Revmatizm", "Osteoartroz"],
+        correct: 0
+      },
+      {
+        question: "Bu xəstəlik gələcəkdə hansı fəsadları verə bilər?",
+        options: ["Podaqra", "Ürək qüsurları"],
+        correct: 1
+      },
+      {
+        question: "Xəstəliyin törədicisi hansı mikrobllardır?",
+        options: ["A qrupundan olan beta hemolitik streptokokklar", "Stafilokokklar"],
+        correct: 0
+      },
+      {
+        question: "Bu vəziyyət keçirilmiş hansı xəstəliklərdən sonra baş verə bilər?",
+        options: ["Angina və tonzillit", "Oynaqların zədələnməsi"],
+        correct: 0
+      },
+      {
+        question: "Bu xəstəlik zamanı daha çox hansı orqan zədələnir?",
+        options: ["Oynaqlar", "Ürək"],
+        correct: 1
+      }
+    ]
+  },
+  {
+    condition: "28 yaşlı neftçi üzdə şişkinlik, baş ağrısı, zəiflik və tez yorulmadan şikayətlənir. Xəstəliyini iki həftə əvvəl angina keçirməsi ilə əlaqələndirir. Obyektiv olaraq A/T 135/96 mm c.süt., nəbz 1 dəqiqədə 80 vurğu, dəri örtüyü solğundur.",
+    questions: [
+      {
+        question: "Hansı xəstəlikdən şübhələnmək olar?",
+        options: ["Qlomerulonefrit", "Pielonefrit"],
+        correct: 0
+      },
+      {
+        question: "Xəstəliyin törədicisi nədir?",
+        options: ["Streptokok", "Stafilokok"],
+        correct: 0
+      },
+      {
+        question: "Xəstəliyin əsas əlaməti hansıdır?",
+        options: ["Ürəkbulanma, qusma, bel nahiyəsində ağrı", "Hipertenziya, ödem, oliquriya"],
+        correct: 1
+      },
+      {
+        question: "Xəstə qidalanmasında nəyi azaltmalıdır?",
+        options: ["Duz və suyu", "Şəkəri"],
+        correct: 0
+      },
+      {
+        question: "Müalicə zamanı hansı dərmanlar tətbiq edilir?",
+        options: ["Antibiotiklər", "Qan əvəzedici preparatlar"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "48 yaşlı xəstə epiqastral nahiyədə dözülməz ağrı, ürəkbulanma, ət qidalarına qarşı ikrah hissi, iştahsızlıq, kəskin arıqlama, qəhvə xıltı şəklində qusmadan və zəiflikdən şikayət edir. Obyektiv olaraq xəstə halsızdır, dəri örtüyü solğun və torpaq rəngindədir, A/T 100/60 mm c.süt., nəbz 1 dəqiqədə 60 vurğudur.",
+    questions: [
+      {
+        question: "Bu hansı xəstəlik ola bilər?",
+        options: ["Mədə xərçəngi", "Pankreatit"],
+        correct: 0
+      },
+      {
+        question: "Qəhvə xıltı şəklində qusma olarsa tibb bacısı nə etməlidir?",
+        options: ["Epiqastral nahiyəyə buz qovuğu qoymalıdır", "Epiqastral nahiyəyə isitqac qoymalıdır"],
+        correct: 0
+      },
+      {
+        question: "Bu xəstəlik zamanı diaqnozu dəqiqləşdirmək üçün hansı müayinələr aparıla bilər?",
+        options: ["Ultrasəs müayinəsi", "Qastrofibroskopiya"],
+        correct: 1
+      },
+      {
+        question: "Bu xəstəlik hansı fəsadlar verə bilər?",
+        options: ["Qanaxma və peritonit", "Abses"],
+        correct: 0
+      },
+      {
+        question: "Qəhvə xıltı şəklində qusma olarsa nəyə üstünlük vermək olar?",
+        options: ["Aminokapron turşusu, disinon inyeksiyası", "Mədənin zondla yuyulması"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "20 yaşlı xəstə ürəkdöyünmə, baş gicəllənmə, təngnəfəslik, iştahsızlıq və zəiflikdən şikayətlənir. Bəzən təbaşir yediyini söyləyir. Obyektiv olaraq dəri örtüyü solğundur, saçların tökülməsi, dırnaqların qırılması və qaşığabənzər formada olması, bəzən aşağı ətraflarında ödem müşahidə olunur. A/T 100/60 mm c.süt., nəbz 1 dəqiqədə 60 vurğu.",
+    questions: [
+      {
+        question: "Bu əlamətlər hansı xəstəlikdə ola bilər?",
+        options: ["Ürək qüsuru", "Dəmir defisitli anemiya"],
+        correct: 1
+      },
+      {
+        question: "Qanın müayinəsində nə aşkarlana bilər?",
+        options: ["Hemoqlobin və eritrositlərin sayının azalması", "Revmatik sınaqların müsbət olması"],
+        correct: 0
+      },
+      {
+        question: "Bu xəstəlikdə hansı qidaların qəbulu məsləhət görülür?",
+        options: ["Ət, çuğundur", "Süd və süd məhsulları"],
+        correct: 0
+      },
+      {
+        question: "Bu xəstəlik zamanı ağız ətrafında çatlar müşahidə olunurmu?",
+        options: ["Bəli", "Xeyr"],
+        correct: 0
+      },
+      {
+        question: "Xəstəliyin müalicəsində hansı preparatların istifadəsi effektlidir?",
+        options: ["Dəmir preparatları, B12", "Sidikqovucular"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "48 yaşlı xəstə gecələr və ac qaldıqda epiqastral nahiyədə olan dözülməz ağrıdan, hava gəyirmədən, ürəkbulanma, qəhvə xıltı qusma və zəiflikdən şikayət edir. 1,5 ildir ki xəstəlik davam edir, son 5 gün ərzində vəziyyəti daha da pisləşib. Xəstə bunu stress keçirməsi ilə əlaqələndirir. Obyektiv olaraq xəstənin vəziyyəti kafidir, huşu aydındır, dəri örtüyü solğun, A/T 100/60 mm c.süt., nəbz 1 dəqiqədə 64 vurğudur.",
+    questions: [
+      {
+        question: "Bu hansı xəstəlikdir?",
+        options: ["Pankreatit", "12 barmaq bağırsağın xora xəstəliyi"],
+        correct: 1
+      },
+      {
+        question: "Xəstəliyin yaranma səbəbləri?",
+        options: ["Heliokobakter pilori", "Öd daşı xəstəliyi"],
+        correct: 0
+      },
+      {
+        question: "Bu xəstəlikdə hansı diaqnostik müayinələr aparılır?",
+        options: ["Endoskopik müayinə, biopsiya", "Ultrasəs müayinəsi"],
+        correct: 0
+      },
+      {
+        question: "Xəstəliyin ağırlaşması?",
+        options: ["Şəkərli diabet", "Perforasiya, qanaxma"],
+        correct: 1
+      },
+      {
+        question: "Ağrıları sakitləşdirmək üçün xəstəyə hansı preparatlar təyin edilə bilər?",
+        options: ["Platifillin, no-şpa", "Kontrikal, festal"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "55 yaşlı xəstə ağızda quruluq, yanğı hissi, çoxlu maye qəbul etməsi, arıqlama, görmə zəifliyi, ayaqlarda hissiyatın itməsi və tez yorulma şikayətləri ilə həkimə müraciət edib. Obyektiv olaraq xəstənin vəziyyəti orta ağırdır, dəri qurudur, üzərində qaşınma izləri var. A/T 140/90 mm c.süt., nəbz 1 dəqiqədə 80-dir.",
+    questions: [
+      {
+        question: "Bu hansı xəstəlikdir?",
+        options: ["Şəkərli diabet", "Şəkərsiz diabet"],
+        correct: 0
+      },
+      {
+        question: "Bu hansı orqanın xəstəliyidir?",
+        options: ["Mədəaltı vəzin", "Hipofizin"],
+        correct: 0
+      },
+      {
+        question: "Bu xəstəlik zamanı orqanizmdə hansı hormon çatışmır?",
+        options: ["İnsulin", "Vazopressin"],
+        correct: 0
+      },
+      {
+        question: "Xəstə hansı müayinələrdən keçməlidir?",
+        options: ["Qanda və sidikdə şəkərin müayinəsi", "Mədə şirəsinin müayinəsi"],
+        correct: 0
+      },
+      {
+        question: "Xəstəliyin müalicəsində hansı preparatlar təyin edilə bilər?",
+        options: ["İnsulin", "Desmopressin"],
+        correct: 0
+      }
+    ]
+  },
+  {
+    condition: "Tibb bacısı 9 aylıq uşağa patronaja gəlmişdir. Ananın sözlərinə görə dünən axşamdan uşağın temperaturu yüksəlmişdir, gecə narahat olmuş, çox ağlamışdır. Hal-hazırda bədən temperaturu 38,5°C, səsi bir qədər batmış, tənəffüsü çətinləşmişdir. Yüksək səsli, 'hürücü' öskürək müşahidə olunur, arabir boğulma halları yaranır.",
+    questions: [
+      {
+        question: "Tibb bacısı nədən şübhələnməlidir?",
+        options: ["Həqiqi inağ", "Yalançı inağ", "Rinit"],
+        correct: 1
+      },
+      {
+        question: "Belə hallarda tibb bacısının ilk addımı hansı olmalıdır?",
+        options: [
+          "Uşağı poliklinikaya aparmağı təklif etmək",
+          "Təcili yardım briqadasını çağırmaq",
+          "Sahə pediatrının qəbuluna yazılmağı məsləhət görmək"
+        ],
+        correct: 2
+      },
+      {
+        question: "Həkim yardımı göstərilənədək tibb bacısı hansı tədbiri aparmalıdır?",
+        options: ["Medikomentoz terapiya", "Yayındırıcı terapiya", "Heç bir tədbir görməməlidir"],
+        correct: 2
+      },
+      {
+        question: "Tibb bacısı uşağın bədən temperaturunu necə aşağı salmağa çalışmalıdır?",
+        options: ["Fiziki üsullarla", "Hərarətsalıcı preparatlarla", "Bədəni massaj etməklə"],
+        correct: 0
+      },
+      {
+        question: "Belə hallarda uşağa maye necə verilməlidir?",
+        options: ["Çox miqdarda", "Məhdud miqdarda", "Maye verilməməlidir"],
+        correct: 2
+      }
+    ]
+  },
+  {
+    condition: "Yanıq şöbəsinə daxil olmuş, 38 yaşlı qadına termiki yanıq diaqnozu qoyulmuşdur. Xəstənin sol qolu və gövdənin ön səthi bütövlükdə III A dərəcəli, sağ qolda III B dərəcəli yanıq müşahidə edilir.",
+    questions: [
+      {
+        question: "Xəstədə neçə faiz dərin, neçə faiz səthi yanıq vardır?",
+        options: ["18% səthi, 18% dərin", "27% səthi, 9% dərin", "9% səthi, 27% dərin"],
+        correct: 1
+      },
+      {
+        question: "Xəstədə nə baş verə bilər?",
+        options: ["Termiki şok", "Yanıq şoku", "Yanıq xəstəliyi"],
+        correct: 2
+      },
+      {
+        question: "Tibb bacısının taktikası?",
+        options: ["Təcili yardım çağırmaq", "Yaraları təmizləyib, məlhəm qoyub sarımaq", "Ürəyin qapalı masajı"],
+        correct: 0
+      }
+    ]
+  }
 ];
 
