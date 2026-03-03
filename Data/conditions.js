@@ -3155,36 +3155,6 @@ const DATA = [
     ]
   },
   {
-    condition: "52 yaşlı arıq bədənli kişidə sürəkli öskürəkdən sonra qısa müddət ərzində 10 ml-dən çox al-qırmızı köpüklü qan xaric olur.",
-    questions: [
-      {
-        question: "Nədən şübhələnirsiz?",
-        options: ["Onikibarmaq bağırsaq qanaxmasından", "Ağ ciyər qanaxmasından", "Mədə qanaxmasından"],
-        correct: 1
-      },
-      {
-        question: "Görüləcək ilk tədbir nədən ibarətdir?",
-        options: ["Xəstəyə 5%-li qlükoza məhlulu venaya köçürtmək", "Heparin inyeksiyasını vurmaq", "Təcili yardıma zəng etmək"],
-        correct: 2
-      },
-      {
-        question: "İlk tibbi yardım necə olmalıdır?",
-        options: ["Döş qəfəsinə soyuq qoymaq", "İsitqac qoymaq", "Oksigen inhalyasiyasını aparmaq"],
-        correct: 0
-      },
-      {
-        question: "Diaqnozu təsdiq etmək üçün aparılacaq əsas müayinə üsulu hansıdır?",
-        options: ["USM", "Angioqrafiya", "Döş qəfəsinin roentgen müayinəsi"],
-        correct: 1
-      },
-      {
-        question: "Xəstə hansı şöbədə yerləşdirilməlidir?",
-        options: ["Terapiya şöbəsində", "Travmatologiya şöbəsində", "Vərəm şöbəsində (və ya pulmonologiya şöbəsində)"],
-        correct: 2
-      }
-    ]
-  },
-  {
     condition: "46 yaşlı xəstə kişi yataqda, uzanmış vəziyyətdədir. Kəskin təngnəfəslik, öskürək, az miqdarda qatı bəlğəm ifrazı, ümumi zəiflikdən şikayətlənir. 4 ildir vaxtaşırı boğulma tutmaları olur. Tutma zamanı 'berotek' inhalyasiyası alır. 5 gün əvvəl kəskin respirator infeksiyaya yoluxub. Bu fonda tutmaların sayı artıb, təngnəfəslik keçmir, dərman inhalyasiyası qısa müddətli effekt verir. Obyektiv olaraq dəri solğun, sianozludur, məsafədən xırıltılı tənəffüs eşidilir. Nəbz 1 dəqiqədə 120, A/T – 160/90, tənəffüs 1 dəqiqədə 28-dir.",
     questions: [
       {
