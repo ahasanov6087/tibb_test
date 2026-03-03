@@ -3812,7 +3812,7 @@ const DATA = [
         options: ["İnsulin", "Desmopressin"],
         correct: 0
       }
-    ]
+    ] 
   },
   {
     condition: "Tibb bacısı 9 aylıq uşağa patronaja gəlmişdir. Ananın sözlərinə görə dünən axşamdan uşağın temperaturu yüksəlmişdir, gecə narahat olmuş, çox ağlamışdır. Hal-hazırda bədən temperaturu 38,5°C, səsi bir qədər batmış, tənəffüsü çətinləşmişdir. Yüksək səsli, 'hürücü' öskürək müşahidə olunur, arabir boğulma halları yaranır.",
