@@ -2302,36 +2302,7 @@ const DATA = [
   ]
 },
 // Məsələ 74
-{
-  condition: "46 yaşlı kişi yataqda uzanmış vəziyyətdədir. Kəskin təngnəfəslik, öskürək, az miqdarda qatı bəlğəm ifrazı, ümumi zəiflikdən şikayətlənir. 4 ildir vaxtaşırı boğulma tutmaları olur. Tutma zamanı 'berotek' inhalyasiyası alır. 5 gün əvvəl kəskin respirator infeksiyaya yoluxub. Bu fonda tutmaların sayı artıb, tənginəfslik keçmir, dərman inhalyasiyası qısa müddətli effekt verir. Obyektiv olaraq: dəri solğun, sianozludur, müəyyən məsafədən xırıltılı tənəffüs eşidilir. Nəbz 1 dəq. 120, A/T -160/90 mm c. süt., tənəffüs 1 dəq. 28-dir.",
-  questions: [
-    {
-      question: "Nədən şübhələnirsiniz?",
-      options: ["Bronxial astma", "Xroniki bronxitin kəskinləşməsi", ""],
-      correct: 0
-    },
-    {
-      question: "Xəstənin döş qəfəsinə xardal yaxması qoymaq olarmı?",
-      options: ["Xeyr", "Bəli", ""],
-      correct: 0
-    },
-    {
-      question: "Xəstənin ayaqlarını isti vannaya qoymaq:",
-      options: ["Olmaz", "Olar", ""],
-      correct: 0
-    },
-    {
-      question: "Oksigenoterapiya aparılması məqsədə uyğundurmu?",
-      options: ["Bəli", "Xeyr", ""],
-      correct: 0
-    },
-    {
-      question: "Xəstənin vəziyyəti necə olmalıdır?",
-      options: ["Yarım oturaq vəziyyət", "Uzanmış vəziyyət", ""],
-      correct: 0
-    }
-  ]
-},
+
 // Məsələ 75
 {
   condition: "15 yaşlı oğlanda qaynar suyun təsiri nəticəsində gövdənin ön hissəsində va aralıq nahiyyəsində 3-4 dərəcəli yanıq var.",
@@ -3150,36 +3121,6 @@ const DATA = [
       {
         question: "Nədən şübhələnirsiz?",
         options: ["Stenokardiya", "Ürək astması", "Miokard infarktı"],
-        correct: 0
-      }
-    ]
-  },
-  {
-    condition: "46 yaşlı xəstə kişi yataqda, uzanmış vəziyyətdədir. Kəskin təngnəfəslik, öskürək, az miqdarda qatı bəlğəm ifrazı, ümumi zəiflikdən şikayətlənir. 4 ildir vaxtaşırı boğulma tutmaları olur. Tutma zamanı 'berotek' inhalyasiyası alır. 5 gün əvvəl kəskin respirator infeksiyaya yoluxub. Bu fonda tutmaların sayı artıb, təngnəfəslik keçmir, dərman inhalyasiyası qısa müddətli effekt verir. Obyektiv olaraq dəri solğun, sianozludur, məsafədən xırıltılı tənəffüs eşidilir. Nəbz 1 dəqiqədə 120, A/T – 160/90, tənəffüs 1 dəqiqədə 28-dir.",
-    questions: [
-      {
-        question: "Nədən şübhələnirsiniz?",
-        options: ["Bronxial astma", "Xroniki bronxitin kəskinləşməsi"],
-        correct: 0
-      },
-      {
-        question: "Xəstənin döş qəfəsinə xardal yaxması qoymaq olarmı?",
-        options: ["Xeyr", "Bəli"],
-        correct: 1
-      },
-      {
-        question: "Xəstənin ayaqlarını isti vannaya qoymaq olarmı?",
-        options: ["Olmaz", "Olar"],
-        correct: 1
-      },
-      {
-        question: "Oksigenoterapiya məqsədəuyğundurmu?",
-        options: ["Bəli", "Xeyr"],
-        correct: 0
-      },
-      {
-        question: "Xəstənin vəziyyəti necə olmalıdır?",
-        options: ["Yarımoturaq vəziyyət", "Uzanmış vəziyyət"],
         correct: 0
       }
     ]
@@ -4840,36 +4781,6 @@ const DATA = [
     ]
   },
   {
-    condition: "46 yaşlı xəstə kişi yataqda, uzanmış vəziyyətdədir. Kəskin təngnəfəslik, öskürək, az miqdarda qatı bəlğəm ifrazı, ümumi zəiflikdən şikayətlənir. 4 ildir vaxtaşırı boğulma tutmaları olur. Tutma zamanı 'berotek' inhalyasiyası alır. 5 gün əvvəl kəskin respirator infeksiyaya yoluxub. Bu fonda tutmaların sayı artıb, təngnəfəslik keçmir, dərman inhalyasiyası qısa müddətli effekt verir. Obyektiv olaraq dəri solğun, sianozludur, məsafədən xırıltılı tənəffüs eşidilir. Nəbz 1 dəqiqədə 120, A/T – 160/90, tənəffüs 1 dəqiqədə 28-dir.",
-    questions: [
-      {
-        question: "Nədən şübhələnirsiniz?",
-        options: ["Bronxial astma", "Xroniki bronxitin kəskinləşməsi", "Ağciyər emfizeması"],
-        correct: 0
-      },
-      {
-        question: "Xəstənin döş qəfəsinə xardal yaxması qoymaq olarmı?",
-        options: ["Xeyr", "Bəli", "Həkimin icazəsi ilə"],
-        correct: 1
-      },
-      {
-        question: "Xəstənin ayaqlarını isti vannaya qoymaq olarmı?",
-        options: ["Olmaz", "Olar", "Yalnız ayaqlara"],
-        correct: 1
-      },
-      {
-        question: "Oksigenoterapiya məqsədəuyğundurmu?",
-        options: ["Bəli", "Xeyr", "Yalnız kəskin tutmada"],
-        correct: 0
-      },
-      {
-        question: "Xəstənin vəziyyəti necə olmalıdır?",
-        options: ["Yarımoturaq vəziyyət", "Uzanmış vəziyyət", "Oturaq vəziyyət"],
-        correct: 0
-      }
-    ]
-  },
-  {
     condition: "15 yaşlı oğlanda qaynar suyun təsiri nəticəsində gövdənin ön hissəsindəki və arxa nahiyəsindəki 3-4 dərəcəli yanıq var.",
     questions: [
       {
@@ -5955,36 +5866,6 @@ const DATA = [
       {
         question: "Həkim uşağa Hepatit B peyvəndinin vurulmasını təyin edib. Hepatit B peyvəndi hansı nahiyəyə vurulmalıdır?",
         options: ["Budun ön-lateral hissəsinə", "Sağrının yuxarı 1/4 xarici kvadratına", "Bazunun yuxarı 1/3 hissəsinə"],
-        correct: 0
-      }
-    ]
-  },
-  {
-    condition: "46 yaşlı kişinin qarnında kəskin ağrılar, qusma, qarın boşluğundaki ekssudat və qarının ön divar əzələlərinin gərginləşməsi, taxtavari qarın (defans), nəbzin tezləşməsi (1 dəqiqədə 128 vurğu) və təngnəfəslik müşahidə edilir. Xəstənin vəziyyəti ağırdır və temperaturu yüksəkdir (38,60C).",
-    questions: [
-      {
-        question: "Nədən şübhələnirsiniz?",
-        options: ["Peritonit", "Böyrək daşı", "Qastrit"],
-        correct: 0
-      },
-      {
-        question: "Görüləcək ilk tədbir nədən ibarətdir?",
-        options: ["Buz qovuqcuğu və ya soyuq qoymaq, xəstəni sakitləşdirmək", "Mədəni zondla yumaq", "Narkotiklər vurmaq"],
-        correct: 0
-      },
-      {
-        question: "İlk tibbi yardım necə olmalıdır?",
-        options: ["Şəraitdən asılı olaraq təcili yardıma zəng etmək", "İsitqac qoymaq", "Ağrıkəsici vurmaq"],
-        correct: 0
-      },
-      {
-        question: "Xəstə hansı şöbədə yerləşdirilməlidir?",
-        options: ["Təcili cərrahi şöbəyə yerləşdirilməlidir", "Terapiya şöbəsindəki yerləşdirilməlidir", "Travmatologiya şöbəsindəki"],
-        correct: 0
-      },
-      {
-        question: "Xəstənin əməliyyata hazırlıq zamanı sanitar işlənməsi necə olmalıdır?",
-        options: ["Təcili hallarda tam sanitar işlənmə aparılmır", "Tam sanitar işlənmə mütləq aparılır", "Mədə zondla yuyulduqdan sonra aparılır"],
         correct: 0
       }
     ]
